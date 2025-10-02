@@ -1,4 +1,4 @@
-package day15_SpaceShooter;
+package SpaceShooter;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +15,7 @@ class Enemy {
         this.y = y;
         this.w = w;
         this.h = h;
-        this.img = new ImageIcon(getClass().getResource(path)).getImage();
+        this.img = new ImageIcon(path).getImage();
     }
 
     // Move down the screen by dy pixels

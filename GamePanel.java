@@ -1,4 +1,4 @@
-package day15_SpaceShooter;
+package SpaceShooter;
 
 import javax.swing.*;
 import java.awt.*;
@@ -56,10 +56,9 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
         addKeyListener(this);
 
         // Load Images
-        backgroundImage = new ImageIcon(getClass().getResource("Background/SpaceBackGround.png")).getImage();
-        playerImage = new ImageIcon(getClass().getResource("Ship/UserRocket.png")).getImage();
-        bulletImage = new ImageIcon(getClass().getResource("Ship/Bullet.png")).getImage();
-
+        backgroundImage = new ImageIcon("Background/SpaceBackGround.png").getImage();
+        playerImage = new ImageIcon("ship/UserRocket.png").getImage();
+        bulletImage = new ImageIcon("ship/Bullet.png").getImage();
 
         // Game loop: runs actionPerformed() 60 times per second
         timer = new Timer(16, this);

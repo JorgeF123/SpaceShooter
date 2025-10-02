@@ -1,4 +1,4 @@
-package day15_SpaceShooter;
+package SpaceShooter;
 
 import javax.swing.*;
 
